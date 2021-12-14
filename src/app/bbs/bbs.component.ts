@@ -7,13 +7,16 @@ import { OktaConfigService } from "app/shared/okta/okta-config.service";
 import { OktaGetTokenService } from 'app/shared/okta/okta-get-token.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AuthNoticeComponent } from 'app/auth-notice/auth-notice.component';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 @Component({
-  selector: 'app-sample-page',
-  templateUrl: './sample-page.component.html',
-  styleUrls: ['./sample-page.component.css']
+  selector: 'app-bbs',
+  templateUrl: './bbs.component.html',
+  styleUrls: ['./bbs.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
-export class SamplePageComponent implements OnInit {
+export class BbsComponent implements OnInit {
   strThisSession;
   strUserSession: Boolean;
   public authService = new OktaAuth(this.OktaSDKAuthService.config);

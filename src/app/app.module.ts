@@ -41,10 +41,11 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {LandingComponent} from 'app/landing/landing.component';
 import {FooterComponent} from 'app/shared/footer/footer.component';
 import { LoginComponent } from 'app/login/login.component';
-import { SamplePageComponent } from './sample-page/sample-page.component';
+//import { SamplePageComponent } from './sample-page/sample-page.component';
 //import { AuthNoticeComponent } from './auth-notice/auth-notice.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AuthNoticeComponent } from './auth-notice/auth-notice.component';
+import { BbsComponent } from './bbs/bbs.component';
 
 @NgModule({
   declarations: [
@@ -53,8 +54,9 @@ import { AuthNoticeComponent } from './auth-notice/auth-notice.component';
     FooterComponent,
     LandingComponent,
     LoginComponent,
-    SamplePageComponent,
+    //SamplePageComponent,
     AuthNoticeComponent,
+    BbsComponent,
     //AuthNoticeComponent,
    
     
