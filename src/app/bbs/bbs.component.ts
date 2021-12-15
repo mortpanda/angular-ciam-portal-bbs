@@ -9,6 +9,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AuthNoticeComponent } from 'app/auth-notice/auth-notice.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDividerModule} from '@angular/material/divider';
+import {BbsContent, bbspost} from 'app/shared/bbs-content/bbs-content';
 
 @Component({
   selector: 'app-bbs',
@@ -21,6 +22,8 @@ export class BbsComponent implements OnInit {
   strUserSession: Boolean;
   public authService = new OktaAuth(this.OktaSDKAuthService.config);
   durationInSeconds = 5;
+
+  bbspost = bbspost;
 
   constructor(public OktaGetTokenService: OktaGetTokenService,
     public OktaSDKAuthService: OktaSDKAuthService,
