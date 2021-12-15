@@ -1,4 +1,3 @@
-
 .userText {
   color: #ffffff !important;
   text-align: center !important;
@@ -26,11 +25,12 @@
 
 .fxcontainer {
   width: 90%;
+  /* height: auto!important; */
   height: 80vh !important;
   color: #00297a;
   display: flex !important;
   overflow: auto;
-  margin-top: 30px !important;
+  margin-top: 90px !important;
 }
 
 .userNameItem {
@@ -56,7 +56,7 @@
   width: 90% !important;
   height: 80vh !important;
   background-color: #ffffff !important;
-  border-radius: 5px !important;
+  /* border-radius: 5px !important; */
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
 }
@@ -88,6 +88,7 @@
 .mat-tab-body-content {
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
+  height: 100% !important;
 }
 
 .bbsEntry {
@@ -122,8 +123,8 @@
 }
 /* .bbsContainer{
    border: solid;
-  border-width: thin;  
-  
+  border-width: thin;
+
 } */
 
 .PostUser {
@@ -141,15 +142,16 @@
 
 .PostSubject {
   margin-left: 30px !important;
+  margin-right: 30px !important;
   color: #41414b !important;
   font-size: 22px !important;
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
   font-weight: 700 !important;
-  line-height: 0.7!important;
+  line-height: 1.2 !important;
 }
 
-.readMore{
+.readMore {
   color: #aaaab4 !important;
   font-size: 12px !important;
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
@@ -162,7 +164,7 @@
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
   margin-left: 40px !important;
-  line-height: 0.7!important;
+  /* line-height: 0.7!important; */
 }
 
 .PostDivider {
@@ -171,9 +173,21 @@
 }
 
 .bbsPostContainer {
-  border-radius: 5px !important;
+  /* border-radius: 5px !important; */
+  height: auto !important;
+  width: 90% !important;
+  background-color: #ffffff !important;
 }
 
+/* Hide the scrollbar byu still allow scroll : Chrome, Safari and Opera */
+.ng-trigger-translateTab::-webkit-scrollbar {
+  display: none;
+}
+/* Hide the scrollbar byu still allow scroll :  IE, Edge and Firefox */
+.ng-trigger-translateTab {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 /* .leftPost,
 .userIcon,
 .bbsUser,
@@ -181,11 +195,45 @@
 .PostDate,
 .PostSubject,
 .bbsPostContainer,
- .feedBox, 
+ .feedBox,
 .bbsContainer
 .bbsEntry{
   border: solid;
-  border-width: thin;  
+  border-width: thin;
   border-color: black!important;
 }
  */
+
+.comments {
+  vertical-align: middle !important;
+  color: #00297a !important;
+  font-size: 12px !important;
+  padding-top: 30px !important;
+  margin-right: 10px !important;
+  vertical-align: middle !important;
+  width: 10%!important;
+  height:10%!important;
+  background-color: #aaaab4 !important;
+
+}
+
+/* .strPostID {
+  border: solid;
+  border-width: thin;
+  border-color: black!important;
+  height: 30px!important;
+  width: 20px !important;
+  margin-top: 10px!important;
+  margin-bottom: 10px!important;
+  margin-right: 10px !important;
+  margin-left: 20px !important;
+  padding-top: 15px!important;
+  padding-bottom: 10px!important;
+  padding-right: 15px!important;
+  padding-left: 10px!important;
+  background-color: #6e6e78;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+} */

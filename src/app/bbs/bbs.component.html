@@ -1,11 +1,4 @@
-<!-- <div class="wrapper"> -->
-
-<!-- <div class="page-header section-dark" style="background-image: url('assets/img/okta_blue_bg.png')"> -->
-<!-- <h1><img src="assets/img/okta_japan_white_medium.png" alt="" class="responsive"></h1> -->
-
 <div class="page-header" style="background-image: url('assets/img/okta_blue_bg.png')">
-  <!-- <div class="page-header" style="background-color: #00297A"> -->
-
   <div class="fxcontainer" fxLayout="row wrap" fxLayoutAlign="center">
     <div class="item userNameItem" fxFlex="0 0 90%">ようこそ <h1>{{this.OktaGetTokenService.strUserName}}</h1>
     </div>
@@ -13,60 +6,54 @@
       <mat-tab-group class="tabGroup">
         <mat-tab label="フィード">
 
-          <div class="bbsPostContainer" fxFlex="grow" fxLayout="column" fxLayoutAlign="center" fxLayoutGap="20px">
+          <div class="postFlex" fxLayout="row" *ngFor="let strpost of bbspost">
 
-            <div class="bbsContainer" fxFlex="grow" fxLayout="column" fxLayoutAlign="center" fxLayoutGap="20px">
+            <div class="bbsPostContainer" fxLayout="column">
+
               <div class="bbsEntry" fxLayout="row" fxLayoutGap="10px">
                 <img src="assets/img/user_blue_small.png" class="userIcon">
-                <span>
-                  <span class="PostUser">User's Name </span>
+                <a>
+                  <a class="PostUser">{{ strpost.author }}</a>
                   <br />
-                  <span class="PostDate">2021年12月15日</span>
-                </span>
+                  <a class="PostDate">{{ strpost.postDate }}</a>
+                </a><br>
               </div>
-              <div><span class="PostSubject">Main Title</span></div>
-              <span class="PostSubjectSub">Sub title</span>
+              <div class="PostSubject">{{ strpost.title }}</div>
+              <div class="PostSubjectSub">{{ strpost.subtitle }}</div>
+              <div><a class="readMore">Read more....</a></div>
+              
             </div>
+            <div class="comments">コメント数 {{ strpost.comments }}</div>
+            <div class="comments">最終投稿日</div>
 
-            <a class="readMore">Read more....</a>
-            <mat-divider class="PostDivider"></mat-divider>
-
-            <!-- <div class="bbsContainer" fxFlex="grow" fxLayout="column" fxLayoutAlign="center" fxLayoutGap="20px">
-              <div class="bbsEntry" fxLayout="row" fxLayoutGap="10px">
-                <img src="assets/img/user_blue_small.png" class="userIcon">
-                <span>
-                  <span class="PostUser">User's Name </span>
-                  <br />
-                  <span class="PostDate">2021年12月15日</span>
-                </span>
-              </div>
-              
-            </div> -->
-            <!-- <div class="bbsContainer" fxLayout="row wrap" fxLayoutAlign="center">
-            <div class="bbsEntry">
-              <a><img src="assets/img/user_blue_small.png" class="userIcon">4546<br>45345</a>
-              
-            </div> -->
-
-            <!-- <div class="bbsContainer" fxLayout="column wrap" fxLayoutAlign="center">
-                 <div><a class="bbsUser">Content 1</a></div>
-                <div><a class="bbsUser">Content 1</a></div> 
-              </div> -->
-            <!-- </div> -->
-
-
-            <!-- <div class="bbsEntry">
-              <a><img src="assets/img/user_blue_small.png" class="userIcon"></a>
-              Content 2 
-            </div> -->
           </div>
 
         </mat-tab>
-
       </mat-tab-group>
     </div>
-    
-
   </div>
-  <!-- </div> -->
+
+
+
+  <!-- <div class="bbsPostContainer" fxFlex="grow" fxLayout="column" fxLayoutAlign="center" fxLayoutGap="20px"
+  *ngFor="let strpost of bbspost">
+  <div class="bbsContainer" fxFlex="grow" fxLayout="column" fxLayoutAlign="center" fxLayoutGap="20px">
+    
+    
+    <div class="bbsEntry" fxLayout="row" fxLayoutGap="10px">
+      <img src="assets/img/user_blue_small.png" class="userIcon">
+      <span>
+        <span class="PostUser">{{ strpost.author }}</span>
+        <br />
+        <span class="PostDate">{{ strpost.postDate }}</span>
+      </span>
+    </div>
+    <div class="PostSubject">{{ strpost.title }}</div>
+    <span class="PostSubjectSub">{{ strpost.subtitle }}</span>
+  </div>
+ 
+  <a class="readMore">Read more....</a>
   
+  <mat-divider class="PostDivider"></mat-divider>
+
+</div> -->
