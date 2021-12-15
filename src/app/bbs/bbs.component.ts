@@ -8,7 +8,7 @@ import { OktaGetTokenService } from 'app/shared/okta/okta-get-token.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AuthNoticeComponent } from 'app/auth-notice/auth-notice.component';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import {MatDividerModule} from '@angular/material/divider';
 
 @Component({
   selector: 'app-bbs',
