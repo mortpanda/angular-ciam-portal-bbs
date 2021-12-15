@@ -1,3 +1,4 @@
+
 .userText {
   color: #ffffff !important;
   text-align: center !important;
@@ -145,9 +146,46 @@
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
   font-weight: 700 !important;
+  line-height: 0.7!important;
+}
+
+.readMore{
+  color: #aaaab4 !important;
+  font-size: 12px !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+  margin-left: 60px !important;
+}
+.PostSubjectSub {
+  color: #aaaab4 !important;
+  font-size: 16px !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+  margin-left: 40px !important;
+  line-height: 0.7!important;
 }
 
 .PostDivider {
   width: 80% !important;
-  margin-left: 25px!important;
+  margin-left: 25px !important;
 }
+
+.bbsPostContainer {
+  border-radius: 5px !important;
+}
+
+/* .leftPost,
+.userIcon,
+.bbsUser,
+.PostUser,
+.PostDate,
+.PostSubject,
+.bbsPostContainer,
+ .feedBox, 
+.bbsContainer
+.bbsEntry{
+  border: solid;
+  border-width: thin;  
+  border-color: black!important;
+}
+ */
