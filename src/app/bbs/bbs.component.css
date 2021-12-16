@@ -1,40 +1,50 @@
-.userText {
-  color: #ffffff !important;
+.PostTitle {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  color: #41414b !important;
+  font-size: 18px !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+}
+.post_img {
+  margin-top: 10px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  margin-bottom: 10px !important;
+  width: 50px !important;
+  height: auto !important;
   text-align: center !important;
-  white-space: pre-line;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
 }
 
-.userContainer {
-  display: block !important;
-  white-space: pre-line;
+.PostBox {
+  margin-top: 10px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  margin-bottom: 10px !important;
+  background-color: #d7d7dc !important;
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
-}
-
-.item {
-  width: 300px;
-  height: 300px;
-  background-color: #ffffff;
-  margin: 5px;
   border-radius: 5px !important;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
+  max-width: 300px!important;
+  
 }
 
 .fxcontainer {
-  width: 90%;
-  /* height: auto!important; */
-  height: 80vh !important;
-  color: #00297a;
+  /* width: 100%;  */
+  margin-left:10px!important;
+  margin-right:10px!important;
+  height: auto !important;
   display: flex !important;
-  overflow: auto;
-  margin-top: 90px !important;
+  color: #00297a;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+  
+  /* margin-top: 90px !important; */
 }
 
 .userNameItem {
-  height: auto !important;
   background-color: transparent !important;
   color: #ffffff !important;
   align-items: center !important;
@@ -43,26 +53,45 @@
 }
 
 /* Hide the scrollbar byu still allow scroll : Chrome, Safari and Opera */
-.fxcontainer::-webkit-scrollbar {
+.fxcontainer,.feedBox ::-webkit-scrollbar {
   display: none;
 }
 /* Hide the scrollbar byu still allow scroll :  IE, Edge and Firefox */
-.fxcontainer {
+.fxcontainer, .feedBox {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 
 .feedBox {
-  width: 70% !important;
-  /* height: 80vh !important; */
-  background-color: #ffffff !important;
-  /* border-radius: 5px !important; */
+  width: auto;
+  /* max-width: 90%!important; */
+  background-color: #ffffff!important;
+  border-radius: 5px!important;
+  color: #00297a;
+  display: flex !important;
+  overflow: auto;
+  margin-top: 30px !important;
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
 }
 
+.postSubTitle{
+  margin-left: 5px!important;
+  margin-right: 5px!important;
+}
+
+.postDate{
+  margin-left: 5px!important;
+  margin-right: 5px!important;
+}
+
+.readMore{
+  margin-left: 15px!important;
+  margin-bottom: 20px!important;
+}
+
 /* .mat-tab-header,  */
-.mat-tab-label {
+/* .mat-tab-label {
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
 
@@ -89,45 +118,42 @@
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
   height: 100% !important;
-}
+} */
 
-.bbsEntry {
+/* .bbsEntry {
   padding-top: 10px !important;
-  /* padding-bottom: 10px !important; */
-  /* margin-top: 10px !important; */
+  
   margin-bottom: 10px !important;
-  /* margin-left: 20px !important; */
+  
   width: 90% !important;
   height: auto !important;
   color: #00297a !important;
   background-color: #d7d7dc !important;
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
-}
+} */
 
-.userIcon {
-  /* border: solid;
-  border-width: thin; */
+/* .userIcon {
+ 
 
   width: 40px !important;
   height: auto !important;
   margin-left: 10px !important;
-}
-.bbsUser {
-  /* border: solid;
-  border-width: thin; */
+} */
+/* .bbsUser {
+
   color: #00297a !important;
   font-size: 14px !important;
   font-weight: 600 !important;
   margin-left: 10px !important;
-}
+} */
 /* .bbsContainer{
    border: solid;
   border-width: thin;
 
 } */
 
-.PostUser {
+/* .PostUser {
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
   color: #00297a !important;
@@ -161,27 +187,27 @@
   margin-bottom: 15px !important;
   margin-left: 30px !important;
   width: 300px !important;
-}
-.PostSubjectSub {
+} */
+/* .PostSubjectSub {
   color: #aaaab4 !important;
   font-size: 16px !important;
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
   margin-left: 40px !important;
-  /* line-height: 0.7!important; */
-}
+ 
+} */
 
-.PostDivider {
+/* .PostDivider {
   width: 80% !important;
   margin-left: 25px !important;
-}
+} */
 
-.bbsPostContainer {
-  /* border-radius: 5px !important; */
+/* .bbsPostContainer {
+  
   height: auto !important;
   width: 90% !important;
   background-color: #ffffff !important;
-}
+} */
 
 /* Hide the scrollbar byu still allow scroll : Chrome, Safari and Opera */
 .ng-trigger-translateTab::-webkit-scrollbar {
@@ -208,7 +234,7 @@
 }
  */
 
-.comments {
+/* .comments {
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
   color: #00297a !important;
@@ -216,42 +242,30 @@
   font-weight: 300 !important;
   padding-top: 60px !important;
   text-align: center !important;
-  /* margin-right: 10px !important; */
-  /* vertical-align: middle !important; */
+  
   width: 20% !important;
-  /* height:10%!important; */
-  /* background-color: #aaaab4 !important; */
-  /* border: solid;
-  border-width: thin;
-  border-color: black !important;
-  background-color: #ffffff !important; */
-    
-  /* border: solid!important;
-  border-width: thick!important;
-  border-color: #d7d7dc!important; */
-}
+  
+} */
 
-.imgBox {
-  /* margin-left: auto!important; */
+/* .imgBox {
+ 
   margin-top: 50px !important;
   margin-left: 15px !important;
   margin-right: 15px !important;
   vertical-align: middle !important;
   width: 50%;
   height: auto !important;
-  /* background-color: #ffffff !important; */
+ 
   
-}
-.postImg {
-  /* border: solid;
-  border-width: thin;
-  border-color: black !important; */
+} */
+/* .postImg {
+  
   width: 100px !important;
   height: auto !important;
   min-width: 10px !important;
-  /* background-color: #ffffff !important; */
+  
   background-color: #d7d7dc !important;
-}
+} */
 
 /* .strPostID {
   border: solid;
@@ -274,7 +288,7 @@
     "Cantarell", "Helvetica Neue", sans-serif !important;
 } */
 
-.forumHeading{
+/* .forumHeading{
   background-color: #00297a!important;
   color: #FFFFFF!important;
   height: 50px!important;
@@ -283,4 +297,31 @@
   border: solid!important;
   border-width: thick!important;
   border-color: #d7d7dc!important;
+} */
+
+/* 
+
+.userText {
+  color: #ffffff !important;
+  text-align: center !important;
+  white-space: pre-line;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
 }
+
+.userContainer {
+  display: block !important;
+  white-space: pre-line;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+}*/
+
+/* .item {
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  margin: 5px;
+  border-radius: 5px !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+}  */

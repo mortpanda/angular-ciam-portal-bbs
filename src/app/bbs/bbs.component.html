@@ -1,5 +1,59 @@
 <div class="page-header" style="background-image: url('assets/img/okta_blue_bg.png')">
   <div class="fxcontainer" fxLayout="row wrap" fxLayoutAlign="center">
+    <div class="userNameItem" fxFlex="0 0 90%">ようこそ <h1>{{this.OktaGetTokenService.strUserName}}</h1>
+    </div>
+
+    <div class="feedBox" fxLayout="row wrap" fxLayoutAlign="center">
+      <div class="PostBox" fxLayout="column" fxLayoutAlign.xs="center" *ngFor="let strpost of bbspost" fxLayoutGap="10px">
+        <!-- <a class="u-post-header-link" href="blog/post-5.html"> -->
+        <!--blog_post_image-->
+        <img src=" {{ strpost.postImg }} " class="post_img">
+        <!--/blog_post_image-->
+        <!-- </a> -->
+        <!--blog_post_header-->
+        <h2 class="PostTitle">
+          
+            <!--blog_post_header_content-->{{ strpost.title }}
+            <!--/blog_post_header_content-->
+          
+        </h2>
+        <!--/blog_post_header-->
+        <!--blog_post_content-->
+        <div class="postSubTitle">
+          <!--blog_post_content_content-->{{ strpost.subtitle }}
+          <!--/blog_post_content_content-->
+        </div>
+        <!--/blog_post_content-->
+        <!--blog_post_metadata-->
+        <div class="u-blog-control u-metadata u-metadata-1">
+          <!--blog_post_metadata_date-->
+          <span class="postDate">
+            <!--blog_post_metadata_date_content-->作成日 : {{ strpost.postDate }}
+            <!--/blog_post_metadata_date_content-->
+          </span>
+          <!--/blog_post_metadata_date-->
+        </div>
+        <!--/blog_post_metadata-->
+        <!--blog_post_readmore-->
+        <a class="readMore">Read More
+          <!--blog_post_readmore_content-->
+          <!--options_json-->
+          <!--{"content":""}-->
+          <!--/options_json-->
+          <!--/blog_post_readmore_content-->
+        </a>
+        <!--/blog_post_readmore-->
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+  <!-- <div class="page-header" style="background-image: url('assets/img/okta_blue_bg.png')">
+  <div class="fxcontainer" fxLayout="row wrap" fxLayoutAlign="center">
     <div class="item userNameItem" fxFlex="0 0 90%">ようこそ <h1>{{this.OktaGetTokenService.strUserName}}</h1>
     </div>
     <div class="feedBox">
@@ -29,29 +83,4 @@
         </mat-tab>
       </mat-tab-group>
     </div>
-  </div>
-
-
-
-  <!-- <div class="bbsPostContainer" fxFlex="grow" fxLayout="column" fxLayoutAlign="center" fxLayoutGap="20px"
-  *ngFor="let strpost of bbspost">
-  <div class="bbsContainer" fxFlex="grow" fxLayout="column" fxLayoutAlign="center" fxLayoutGap="20px">
-    
-    
-    <div class="bbsEntry" fxLayout="row" fxLayoutGap="10px">
-      <img src="assets/img/user_blue_small.png" class="userIcon">
-      <span>
-        <span class="PostUser">{{ strpost.author }}</span>
-        <br />
-        <span class="PostDate">{{ strpost.postDate }}</span>
-      </span>
-    </div>
-    <div class="PostSubject">{{ strpost.title }}</div>
-    <span class="PostSubjectSub">{{ strpost.subtitle }}</span>
-  </div>
- 
-  <a class="readMore">Read more....</a>
-  
-  <mat-divider class="PostDivider"></mat-divider>
-
-</div> -->
+  </div> -->

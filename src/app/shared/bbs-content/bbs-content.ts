@@ -32,7 +32,7 @@ export const bbspost = [
     subtitle: 'シームレスな顧客エクスペリエンスを構築',
     content: 'ユーザーエクスペリエンスをパーソナライズし、お客様の安全を維持しながら実運用までの時間を短縮します。以下のような統合が可能です。API ゲートウェイ - 迅速なアプリケーション開発と一元化されたアイデンティティ主導型 API セキュリティを実現します。アイデンティティプルーフィング - リスクベースの認証により、なりすましから保護します。',
     comments: '6',
-    postImg: 'assets/img/okta_efficiency.png',
+    postImg: 'assets/img/okta_api.png',
     lastupdate:'2021年12月5日',
   },
   {
@@ -57,4 +57,5 @@ export const bbspost = [
     postImg: 'assets/img/okta_solution_provider.png',
     lastupdate:'2021年9月19日',
   },
+  
 ]
