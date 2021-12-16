@@ -1,3 +1,59 @@
+.postImg {
+  grid-area: postImg;
+  /* text-align: center;  */
+}
+.postAuthor {
+  grid-area: postAuthor;
+}
+.postedDate {
+  grid-area: postedDate;
+}
+.postMainTitle {
+  grid-area: postMainTitle;
+}
+.item6 {
+  grid-area: header;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 50px 50px;
+  grid-template-columns: 150px 1fr;
+  grid-template-areas:
+    "postImg postAuthor postAuthor postAuthor postedDate postedDate"
+    "postImg postMainTitle postMainTitle postMainTitle postMainTitle postMainTitle"
+    "header header header header header header";
+  /* grid-gap: 5px; */
+  background-color: #ffffff !important;
+  color: #00297a !important;
+  /* padding: 10px; */
+  width: 90% !important;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* text-align: center; */
+  /* padding: 20px 0; */
+  font-size: 18px;
+  border: solid;
+  border-width: thin;
+  border-color: black !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+}
+
+/* @media (max-width: 400px) {
+  #grid-container {
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+      "img"
+      "main"
+      "right"
+      "footer"
+      "header";
+  }
+} */
+
 .PostTitle {
   margin-left: 10px !important;
   margin-right: 10px !important;
@@ -11,7 +67,7 @@
 .post_img {
   margin-top: 10px !important;
   margin-left: 10px !important;
-  margin-right: 10px !important;
+  /* margin-right: 10px !important; */
   margin-bottom: 10px !important;
   width: 50px !important;
   height: auto !important;
@@ -27,20 +83,19 @@
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
   border-radius: 5px !important;
-  max-width: 300px!important;
-  
+  max-width: 300px !important;
 }
 
 .fxcontainer {
-  /* width: 100%;  */
-  margin-left:10px!important;
-  margin-right:10px!important;
+  width: 80%;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
   height: auto !important;
   display: flex !important;
   color: #00297a;
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
-  
+
   /* margin-top: 90px !important; */
 }
 
@@ -50,14 +105,17 @@
   align-items: center !important;
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
+  font-size: 20px !important;
 }
 
 /* Hide the scrollbar byu still allow scroll : Chrome, Safari and Opera */
-.fxcontainer,.feedBox ::-webkit-scrollbar {
+.fxcontainer,
+.feedBox ::-webkit-scrollbar {
   display: none;
 }
 /* Hide the scrollbar byu still allow scroll :  IE, Edge and Firefox */
-.fxcontainer, .feedBox {
+.fxcontainer,
+.feedBox {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -65,8 +123,8 @@
 .feedBox {
   width: auto;
   /* max-width: 90%!important; */
-  background-color: #ffffff!important;
-  border-radius: 5px!important;
+  background-color: #ffffff !important;
+  border-radius: 5px !important;
   color: #00297a;
   display: flex !important;
   overflow: auto;
@@ -75,19 +133,19 @@
     "Cantarell", "Helvetica Neue", sans-serif !important;
 }
 
-.postSubTitle{
-  margin-left: 5px!important;
-  margin-right: 5px!important;
+.postSubTitle {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
 }
 
-.postDate{
-  margin-left: 5px!important;
-  margin-right: 5px!important;
+.postDate {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
 }
 
-.readMore{
-  margin-left: 15px!important;
-  margin-bottom: 20px!important;
+.readMore {
+  margin-left: 15px !important;
+  margin-bottom: 20px !important;
 }
 
 /* .mat-tab-header,  */

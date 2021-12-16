@@ -3,46 +3,51 @@
     <div class="userNameItem" fxFlex="0 0 90%">ようこそ <h1>{{this.OktaGetTokenService.strUserName}}</h1>
     </div>
 
+    <div class="grid-container" *ngFor="let strpost of bbspost">
+      <div class="postImg"><img src=" {{ strpost.postImg }} " class="post_img"></div>
+      <div class="postAuthor">{{ strpost.author }}</div>
+      <div class="postedDate">作成日 : {{ strpost.postDate }}</div>
+      <div class="postMainTitle">{{ strpost.title }}</div>
+      <div class="item6">Header</div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- <div class="fxcontainer" fxLayout="row wrap" fxLayoutAlign="center">
+    <div class="userNameItem" fxFlex="0 0 90%">ようこそ <h1>{{this.OktaGetTokenService.strUserName}}</h1>
+    </div>
+
     <div class="feedBox" fxLayout="row wrap" fxLayoutAlign="center">
-      <div class="PostBox" fxLayout="column" fxLayoutAlign.xs="center" *ngFor="let strpost of bbspost" fxLayoutGap="10px">
-        <!-- <a class="u-post-header-link" href="blog/post-5.html"> -->
-        <!--blog_post_image-->
+      <div class="PostBox" fxLayout="column" fxLayoutAlign.xs="center" *ngFor="let strpost of bbspost"
+        fxLayoutGap="10px">
+
         <img src=" {{ strpost.postImg }} " class="post_img">
-        <!--/blog_post_image-->
-        <!-- </a> -->
-        <!--blog_post_header-->
+
         <h2 class="PostTitle">
-          
-            <!--blog_post_header_content-->{{ strpost.title }}
-            <!--/blog_post_header_content-->
-          
+
+        {{ strpost.title }}
+        
         </h2>
-        <!--/blog_post_header-->
-        <!--blog_post_content-->
+        
         <div class="postSubTitle">
-          <!--blog_post_content_content-->{{ strpost.subtitle }}
-          <!--/blog_post_content_content-->
+          {{ strpost.subtitle }}
+          
         </div>
-        <!--/blog_post_content-->
-        <!--blog_post_metadata-->
+        
         <div class="u-blog-control u-metadata u-metadata-1">
-          <!--blog_post_metadata_date-->
+          
           <span class="postDate">
-            <!--blog_post_metadata_date_content-->作成日 : {{ strpost.postDate }}
-            <!--/blog_post_metadata_date_content-->
+            作成日 : {{ strpost.postDate }}
+            
           </span>
-          <!--/blog_post_metadata_date-->
+        
         </div>
-        <!--/blog_post_metadata-->
-        <!--blog_post_readmore-->
+        
         <a class="readMore">Read More
-          <!--blog_post_readmore_content-->
-          <!--options_json-->
-          <!--{"content":""}-->
-          <!--/options_json-->
-          <!--/blog_post_readmore_content-->
+          
         </a>
-        <!--/blog_post_readmore-->
+        
       </div>
     </div>
 
@@ -50,9 +55,10 @@
 
 
 
-  </div>
+  </div> -->
 
-  <!-- <div class="page-header" style="background-image: url('assets/img/okta_blue_bg.png')">
+
+<!-- <div class="page-header" style="background-image: url('assets/img/okta_blue_bg.png')">
   <div class="fxcontainer" fxLayout="row wrap" fxLayoutAlign="center">
     <div class="item userNameItem" fxFlex="0 0 90%">ようこそ <h1>{{this.OktaGetTokenService.strUserName}}</h1>
     </div>
