@@ -5,11 +5,11 @@
     <div class="feedBox">
       <mat-tab-group class="tabGroup">
         <mat-tab label="フィード">
-
-          <div class="postFlex" fxLayout="row" *ngFor="let strpost of bbspost">
-
+          
+          <div class="postFlex" fxLayout="row" fxLayoutAlign.xs="center center" *ngFor="let strpost of bbspost">
+            <div class="postImg" fxHide.xs="true"><img src=" {{ strpost.postImg }} " class="imgBox"></div>
+            
             <div class="bbsPostContainer" fxLayout="column">
-
               <div class="bbsEntry" fxLayout="row" fxLayoutGap="10px">
                 <img src="assets/img/user_blue_small.png" class="userIcon">
                 <a>
@@ -20,14 +20,12 @@
               </div>
               <div class="PostSubject">{{ strpost.title }}</div>
               <div class="PostSubjectSub">{{ strpost.subtitle }}</div>
-              <div><a class="readMore">Read more....</a></div>
-              
+              <div class="readMoreDiv"><a class="readMore">Read more....</a></div>
             </div>
-            <div class="comments">コメント数 {{ strpost.comments }}</div>
-            <div class="comments">最終投稿日</div>
+            <div class="comments" fxHide.xs="true">コメント数 <br> {{ strpost.comments }}</div>
+            <div class="comments" fxHide.xs="true">最終投稿日 <br> {{ strpost.lastupdate }}</div>
 
           </div>
-
         </mat-tab>
       </mat-tab-group>
     </div>

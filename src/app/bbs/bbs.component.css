@@ -53,8 +53,8 @@
 }
 
 .feedBox {
-  width: 90% !important;
-  height: 80vh !important;
+  width: 70% !important;
+  /* height: 80vh !important; */
   background-color: #ffffff !important;
   /* border-radius: 5px !important; */
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
@@ -93,10 +93,10 @@
 
 .bbsEntry {
   padding-top: 10px !important;
-  padding-bottom: 10px !important;
-  margin-top: 10px !important;
+  /* padding-bottom: 10px !important; */
+  /* margin-top: 10px !important; */
   margin-bottom: 10px !important;
-  margin-left: 20px !important;
+  /* margin-left: 20px !important; */
   width: 90% !important;
   height: auto !important;
   color: #00297a !important;
@@ -151,12 +151,16 @@
   line-height: 1.2 !important;
 }
 
-.readMore {
+.readMore,
+.readMoreDiv {
   color: #aaaab4 !important;
   font-size: 12px !important;
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
-  margin-left: 60px !important;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+  margin-left: 30px !important;
+  width: 300px !important;
 }
 .PostSubjectSub {
   color: #aaaab4 !important;
@@ -205,16 +209,48 @@
  */
 
 .comments {
-  vertical-align: middle !important;
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
   color: #00297a !important;
-  font-size: 12px !important;
-  padding-top: 30px !important;
-  margin-right: 10px !important;
-  vertical-align: middle !important;
-  width: 10%!important;
-  height:10%!important;
-  background-color: #aaaab4 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  padding-top: 60px !important;
+  text-align: center !important;
+  /* margin-right: 10px !important; */
+  /* vertical-align: middle !important; */
+  width: 20% !important;
+  /* height:10%!important; */
+  /* background-color: #aaaab4 !important; */
+  /* border: solid;
+  border-width: thin;
+  border-color: black !important;
+  background-color: #ffffff !important; */
+    
+  /* border: solid!important;
+  border-width: thick!important;
+  border-color: #d7d7dc!important; */
+}
 
+.imgBox {
+  /* margin-left: auto!important; */
+  margin-top: 50px !important;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+  vertical-align: middle !important;
+  width: 50%;
+  height: auto !important;
+  /* background-color: #ffffff !important; */
+  
+}
+.postImg {
+  /* border: solid;
+  border-width: thin;
+  border-color: black !important; */
+  width: 100px !important;
+  height: auto !important;
+  min-width: 10px !important;
+  /* background-color: #ffffff !important; */
+  background-color: #d7d7dc !important;
 }
 
 /* .strPostID {
@@ -237,3 +273,14 @@
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
 } */
+
+.forumHeading{
+  background-color: #00297a!important;
+  color: #FFFFFF!important;
+  height: 50px!important;
+  margin: auto!important;
+
+  border: solid!important;
+  border-width: thick!important;
+  border-color: #d7d7dc!important;
+}
