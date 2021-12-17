@@ -1,25 +1,90 @@
 .postImg {
   grid-area: postImg;
-  /* text-align: center;  */
+  padding-top: auto!important;
+  padding-bottom: auto!important;
+  padding-left: auto!important;
+  padding-right: auto!important;
+  text-align: center !important;
+  background-color: #00297a !important;
+  /* border: solid;
+  border-width: thin;
+  border-color: #d7d7dc !important; 
+  border-radius: 5px!important;*/
 }
 .postAuthor {
   grid-area: postAuthor;
+  padding-top: 10px !important;
+  padding-left: 10px !important;
+  background-color: #00297a !important;
+  color: #ffffff !important;
+  /* border: solid;
+  border-width: thin;
+  border-color: #d7d7dc !important; 
+  border-radius: 5px!important;*/
 }
 .postedDate {
   grid-area: postedDate;
+  padding-top: 10px !important;
+  padding-left: 10px !important;
+  background-color: #00297a !important;
+  color: #ffffff !important;
+  /* border: solid;
+  border-width: thin;
+  border-color: #d7d7dc !important; 
+  border-radius: 5px!important;*/
+  font-size: 14px!important;
 }
 .postMainTitle {
   grid-area: postMainTitle;
+  padding-top: 10px !important;
+  padding-left: 10px !important;
+/*  border: solid;
+   border-width: thin;
+  border-color: #d7d7dc !important;
+  border-radius: 5px!important; 
+  color: #41414B!important;*/
 }
-.item6 {
-  grid-area: header;
+.postLastUpdate {
+  grid-area: postLastUpdate;
+  padding-top: 10px !important;
+  padding-left: 10px !important;
+  padding-bottom: 10px !important;
+  /* border: solid;
+  border-width: thin;
+  border-color: #d7d7dc !important;
+  font-size: 14px!important;
+  border-radius: 5px!important; */
+  font-size: 14px!important;
 }
-.spacer{
-  grid-area: spacer;
+.postComments {
+  grid-area: postComments;
+  padding-top: 10px !important;
+  padding-left: 10px !important;
+  /*border: solid;
+   border-width: thin;
+  border-color: #d7d7dc !important;
+  border-radius: 5px!important; */
+  font-size: 14px!important;
 }
-.snsIcon{
-  grid-area: snsIcon;
+.postReadmore {
+  grid-area: postReadmore;
+  /* border: solid;
+  border-width: thin;
+  border-color: #d7d7dc !important;
+  border-radius: 5px!important; */
 }
+.postID {
+  grid-area: postID;
+  color: #FFFFFF
+}
+.postSubTitle{
+  grid-area: postSubTitle;
+  margin-left: 30px!important;
+  font-size: 14px!important;
+  color: #AAAAB4!important;
+  margin-top: 5px!important;
+}
+
 
 .grid-container {
   display: grid;
@@ -27,16 +92,21 @@
   grid-template-columns: 150px 1fr;
   grid-template-areas:
     "postImg postAuthor postAuthor postAuthor postedDate postedDate"
-    "postImg postMainTitle postMainTitle postMainTitle postMainTitle postMainTitle"
-    "header header header header header header"
-    "snsIcon snsIcon snsIcon snsIcon snsIcon snsIcon"
-    "spacer spacer spacer spacer spacer spacer";
-    
+    "postImg postMainTitle postMainTitle postMainTitle postComments postComments"
+    "postSubTitle postSubTitle postSubTitle postSubTitle postLastUpdate postLastUpdate"
+    "postReadmore postReadmore postReadmore postReadmore postReadmore postID";
+
   /* grid-gap: 5px; */
   background-color: #ffffff !important;
   color: #00297a !important;
   /* padding: 10px; */
   width: 90% !important;
+  margin-bottom: 10px !important;
+  grid-template-columns: 100px 1fr 1fr 1fr 1fr 1fr;
+  border: solid;
+  border-width:medium;
+  border-color: #d7d7dc !important;
+  border-radius: 5px!important; 
 }
 
 .grid-container > div {
@@ -44,9 +114,7 @@
   /* text-align: center; */
   /* padding: 20px 0; */
   font-size: 18px;
-  border: solid;
-  border-width: thin;
-  border-color: black !important;
+
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
 }
@@ -76,11 +144,14 @@
 .post_img {
   margin-top: 10px !important;
   margin-left: 10px !important;
+  margin-right: 10px !important;
+  /* border-radius: 5px !important; */
   /* margin-right: 10px !important; */
   margin-bottom: 10px !important;
   width: 50px !important;
   height: auto !important;
   text-align: center !important;
+  background-color: #00297a !important;
 }
 
 .PostBox {
@@ -96,7 +167,10 @@
 }
 
 .fxcontainer {
+  position: relative;
+  z-index: 2;
   width: 80%;
+  border-radius: 5px !important;
   margin-left: 10px !important;
   margin-right: 10px !important;
   height: auto !important;
@@ -104,7 +178,7 @@
   color: #00297a;
   font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
     "Cantarell", "Helvetica Neue", sans-serif !important;
-margin-top: 120px !important; 
+  margin-top: 120px !important;
 }
 
 .userNameItem {
@@ -156,125 +230,6 @@ margin-top: 120px !important;
   margin-bottom: 20px !important;
 }
 
-/* .mat-tab-header,  */
-/* .mat-tab-label {
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-
-  color: #ffffff !important;
-  font-size: 16px !important;
-  font-weight: 300 !important;
-  vertical-align: middle !important;
-  text-align: center;
-  align-items: center;
-  opacity: 1 !important;
-}
-.mat-tab-label-content {
-  opacity: 1 !important;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-}
-.mat-tab-header {
-  background-color: #00297a !important;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-}
-
-.mat-tab-body-content {
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-  height: 100% !important;
-} */
-
-/* .bbsEntry {
-  padding-top: 10px !important;
-  
-  margin-bottom: 10px !important;
-  
-  width: 90% !important;
-  height: auto !important;
-  color: #00297a !important;
-  background-color: #d7d7dc !important;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-} */
-
-/* .userIcon {
- 
-
-  width: 40px !important;
-  height: auto !important;
-  margin-left: 10px !important;
-} */
-/* .bbsUser {
-
-  color: #00297a !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  margin-left: 10px !important;
-} */
-/* .bbsContainer{
-   border: solid;
-  border-width: thin;
-
-} */
-
-/* .PostUser {
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-  color: #00297a !important;
-  font-size: 18px !important;
-  font-weight: 600 !important;
-}
-.PostDate {
-  color: #6e6e78 !important;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-}
-
-.PostSubject {
-  margin-left: 30px !important;
-  margin-right: 30px !important;
-  color: #41414b !important;
-  font-size: 22px !important;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-  font-weight: 700 !important;
-  line-height: 1.2 !important;
-}
-
-.readMore,
-.readMoreDiv {
-  color: #aaaab4 !important;
-  font-size: 12px !important;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-  margin-top: 15px !important;
-  margin-bottom: 15px !important;
-  margin-left: 30px !important;
-  width: 300px !important;
-} */
-/* .PostSubjectSub {
-  color: #aaaab4 !important;
-  font-size: 16px !important;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-  margin-left: 40px !important;
- 
-} */
-
-/* .PostDivider {
-  width: 80% !important;
-  margin-left: 25px !important;
-} */
-
-/* .bbsPostContainer {
-  
-  height: auto !important;
-  width: 90% !important;
-  background-color: #ffffff !important;
-} */
-
 /* Hide the scrollbar byu still allow scroll : Chrome, Safari and Opera */
 .ng-trigger-translateTab::-webkit-scrollbar {
   display: none;
@@ -284,110 +239,3 @@ margin-top: 120px !important;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-/* .leftPost,
-.userIcon,
-.bbsUser,
-.PostUser,
-.PostDate,
-.PostSubject,
-.bbsPostContainer,
- .feedBox,
-.bbsContainer
-.bbsEntry{
-  border: solid;
-  border-width: thin;
-  border-color: black!important;
-}
- */
-
-/* .comments {
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-  color: #00297a !important;
-  font-size: 14px !important;
-  font-weight: 300 !important;
-  padding-top: 60px !important;
-  text-align: center !important;
-  
-  width: 20% !important;
-  
-} */
-
-/* .imgBox {
- 
-  margin-top: 50px !important;
-  margin-left: 15px !important;
-  margin-right: 15px !important;
-  vertical-align: middle !important;
-  width: 50%;
-  height: auto !important;
- 
-  
-} */
-/* .postImg {
-  
-  width: 100px !important;
-  height: auto !important;
-  min-width: 10px !important;
-  
-  background-color: #d7d7dc !important;
-} */
-
-/* .strPostID {
-  border: solid;
-  border-width: thin;
-  border-color: black!important;
-  height: 30px!important;
-  width: 20px !important;
-  margin-top: 10px!important;
-  margin-bottom: 10px!important;
-  margin-right: 10px !important;
-  margin-left: 20px !important;
-  padding-top: 15px!important;
-  padding-bottom: 10px!important;
-  padding-right: 15px!important;
-  padding-left: 10px!important;
-  background-color: #6e6e78;
-  font-size: 16px !important;
-  font-weight: 600 !important;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-} */
-
-/* .forumHeading{
-  background-color: #00297a!important;
-  color: #FFFFFF!important;
-  height: 50px!important;
-  margin: auto!important;
-
-  border: solid!important;
-  border-width: thick!important;
-  border-color: #d7d7dc!important;
-} */
-
-/* 
-
-.userText {
-  color: #ffffff !important;
-  text-align: center !important;
-  white-space: pre-line;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-}
-
-.userContainer {
-  display: block !important;
-  white-space: pre-line;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-}*/
-
-/* .item {
-  width: 300px;
-  height: 300px;
-  background-color: #ffffff;
-  margin: 5px;
-  border-radius: 5px !important;
-  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
-    "Cantarell", "Helvetica Neue", sans-serif !important;
-}  */

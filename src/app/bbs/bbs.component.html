@@ -8,10 +8,12 @@
       <div class="postAuthor">{{ strpost.author }}</div>
       <div class="postedDate">作成日 : {{ strpost.postDate }}</div>
       <div class="postMainTitle">{{ strpost.title }}</div>
-      <div class="item6">Header</div>
-      <div class="snsIcon">snsIcon</div>
-      <div class="spacer">spacer</div>
-      
+      <div class="postLastUpdate">最終更新日：{{ strpost.lastupdate }}</div>
+      <div class="postReadmore" id="readMore-{{ strpost.id }}">Read More</div>
+      <div class="postComments">コメント数： {{ strpost.comments }}</div>
+      <div class="postID">{{ strpost.id }}</div>
+      <div class="postSubTitle">{{ strpost.subtitle }}</div>
+            
     </div>
   </div>
 </div>
