@@ -1,11 +1,12 @@
-# angular-okta-japan-template-v3
+# angular-ciam-portal-bbs
 
 # THIS IS NOT AN OFFICIAL TEMPLATE.  
 This is was created for personal projects.
 
-# AngularOktaTemplate
+# What does this do?
+A mock up of a forum application used to demonstrate CIAM demo portal app (https://github.com/mortpanda/ciam-demo-portal)
+Currently in Japanese only.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
 ## Development Environment
 ```
